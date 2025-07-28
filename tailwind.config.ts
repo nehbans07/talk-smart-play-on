@@ -52,6 +52,22 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				passive: {
+					DEFAULT: 'hsl(var(--passive))',
+					foreground: 'hsl(var(--passive-foreground))'
+				},
+				aggressive: {
+					DEFAULT: 'hsl(var(--aggressive))',
+					foreground: 'hsl(var(--aggressive-foreground))'
+				},
+				'passive-aggressive': {
+					DEFAULT: 'hsl(var(--passive-aggressive))',
+					foreground: 'hsl(var(--passive-aggressive-foreground))'
+				},
+				assertive: {
+					DEFAULT: 'hsl(var(--assertive))',
+					foreground: 'hsl(var(--assertive-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
