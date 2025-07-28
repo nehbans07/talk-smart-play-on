@@ -268,23 +268,6 @@ const Passive = () => {
             </CardContent>
           </Card>
 
-          {/* Next Steps */}
-          <Card className="bg-gradient-to-r from-passive/20 to-secondary/20 border-passive/30">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Ready to transform like Arjun? 🌟</h3>
-              <p className="text-muted-foreground mb-6">
-                Start your journey from passive to assertive communication today!
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="passive" size="lg">
-                  Start My 7-Day Challenge
-                </Button>
-                <Button variant="outline" size="lg">
-                  Explore Other Styles
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </div>

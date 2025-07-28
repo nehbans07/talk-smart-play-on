@@ -265,23 +265,6 @@ const PassiveAggressive = () => {
             </CardContent>
           </Card>
 
-          {/* Next Steps */}
-          <Card className="bg-gradient-to-r from-passive-aggressive/20 to-assertive/20 border-passive-aggressive/30">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Ready to trade mind games for honest communication? 🧠</h3>
-              <p className="text-muted-foreground mb-6">
-                Transform your strategic energy into direct, effective communication!
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="passive-aggressive" size="lg">
-                  Start My Clarity Journey
-                </Button>
-                <Button variant="outline" size="lg">
-                  Learn Direct Communication
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </div>

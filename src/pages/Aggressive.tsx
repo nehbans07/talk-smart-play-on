@@ -263,23 +263,6 @@ const Aggressive = () => {
             </CardContent>
           </Card>
 
-          {/* Next Steps */}
-          <Card className="bg-gradient-to-r from-aggressive/20 to-assertive/20 border-aggressive/30">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Ready to channel your passion constructively? 🔥</h3>
-              <p className="text-muted-foreground mb-6">
-                Transform your communication from bulldozer to bridge-builder!
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="aggressive" size="lg">
-                  Start My Recovery Program
-                </Button>
-                <Button variant="outline" size="lg">
-                  Learn Assertive Style
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </div>

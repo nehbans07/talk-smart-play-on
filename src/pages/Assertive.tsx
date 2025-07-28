@@ -327,23 +327,6 @@ const Assertive = () => {
             </CardContent>
           </Card>
 
-          {/* Next Steps */}
-          <Card className="bg-gradient-to-r from-assertive/20 to-primary/20 border-assertive/30">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Ready to become the communication champion? 👑</h3>
-              <p className="text-muted-foreground mb-6">
-                Master assertive communication and become the person everyone comes to for advice!
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="assertive" size="lg">
-                  Start My Mastery Journey
-                </Button>
-                <Button variant="hero" size="lg">
-                  Take the Full Quiz
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </div>
