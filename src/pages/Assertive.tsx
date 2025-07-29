@@ -287,6 +287,66 @@ const Assertive = () => {
             </CardContent>
           </Card>
 
+          {/* Additional Resources */}
+          <Card className="mb-12 shadow-card">
+            <CardHeader>
+              <CardTitle className="text-2xl">📚 Additional Resources</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-8">
+              {/* 7-Day Program */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-assertive">👑 Assertive Mastery Accelerator</h3>
+                <div className="grid gap-4">
+                  {assertivePlan.map((day, index) => (
+                    <div key={index} className="p-4 bg-assertive/5 border border-assertive/20 rounded-lg">
+                      <div className="flex items-center gap-3 mb-2">
+                        <Badge variant="assertive">{day.day}</Badge>
+                        <span className="font-semibold">{day.phase}</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-2">{day.task}</p>
+                      <p className="text-xs text-assertive font-medium">Goal: {day.goal}</p>
+                      {day.script && (
+                        <div className="mt-2 p-2 bg-background/50 rounded text-xs italic">
+                          "Script: {day.script}"
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Character Evolution */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-assertive">✨ Aarav's Communication Mastery</h3>
+                <div className="space-y-3">
+                  {[
+                    { phase: "Natural Mediator", description: "Already good at balanced communication but wants to refine his leadership skills" },
+                    { phase: "Advanced Listening", description: "Masters the art of making others feel truly heard and understood" },
+                    { phase: "Conflict Resolution Expert", description: "Becomes the go-to person for resolving team disputes and complex negotiations" },
+                    { phase: "Communication Mentor", description: "Teaches others assertive communication, creating positive ripple effects in his network" }
+                  ].map((step, index) => (
+                    <div key={index} className="flex items-start gap-3 p-3 bg-gradient-to-r from-assertive/10 to-transparent rounded-lg">
+                      <div className="flex items-center justify-center w-8 h-8 bg-assertive text-assertive-foreground rounded-full text-sm font-bold">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm">{step.phase}</h4>
+                        <p className="text-xs text-muted-foreground">{step.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 text-center p-4 bg-assertive/10 rounded-lg">
+                  <p className="text-sm font-semibold mb-2">👑 From Good Communicator to Communication Champion</p>
+                  <div className="flex justify-center gap-2 text-lg">
+                    🗣️➡️🤝➡️👑➡️🌟
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Character Evolution */}
           <Card className="mb-12 shadow-card">
             <CardHeader>

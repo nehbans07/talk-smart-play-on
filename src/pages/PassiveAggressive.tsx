@@ -236,30 +236,61 @@ const PassiveAggressive = () => {
             />
           </div>
 
-          {/* Character Evolution */}
+          {/* Additional Resources */}
           <Card className="mb-12 shadow-card">
             <CardHeader>
-              <CardTitle className="text-2xl">✨ Character Evolution: Kavya's Clarity Journey</CardTitle>
+              <CardTitle className="text-2xl">📚 Additional Resources</CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {[
-                  "Week 1: Kavya realizes her mind games are exhausting her more than anyone else",
-                  "Week 2: Has direct conversation with Nisha instead of Instagram warfare",
-                  "Week 3: Channels her strategic thinking into productive communication",
-                  "Week 4: Friendships become deeper because people finally understand her real feelings!"
-                ].map((step, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 bg-passive-aggressive/10 rounded-lg">
-                    <Badge variant="passive-aggressive">Week {index + 1}</Badge>
-                    <span className="text-sm">{step.split(': ')[1]}</span>
-                  </div>
-                ))}
+            <CardContent className="space-y-8">
+              {/* 7-Day Program */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-passive-aggressive">🎯 Passive-Aggressive Recovery Program</h3>
+                <div className="grid gap-4">
+                  {passiveAggressivePlan.map((day, index) => (
+                    <div key={index} className="p-4 bg-passive-aggressive/5 border border-passive-aggressive/20 rounded-lg">
+                      <div className="flex items-center gap-3 mb-2">
+                        <Badge variant="passive-aggressive">{day.day}</Badge>
+                        <span className="font-semibold">{day.phase}</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-2">{day.task}</p>
+                      <p className="text-xs text-passive-aggressive font-medium">Goal: {day.goal}</p>
+                      {day.script && (
+                        <div className="mt-2 p-2 bg-background/50 rounded text-xs italic">
+                          "Script: {day.script}"
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-              
-              <div className="mt-6 text-center">
-                <p className="text-sm font-semibold mb-4">Decode your own mixed signals like Kavya!</p>
-                <div className="flex justify-center gap-2 text-2xl">
-                  🕵️‍♀️➡️💬
+
+              {/* Character Evolution */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-passive-aggressive">✨ Kavya's Transformation Journey</h3>
+                <div className="space-y-3">
+                  {[
+                    { phase: "Mind Games Master", description: "Exhausting herself with strategic social media warfare and indirect communication" },
+                    { phase: "Awareness Dawn", description: "Realizes her energy is better spent on direct communication than plotting revenge" },
+                    { phase: "Direct Communication", description: "Has honest conversation with Nisha instead of Instagram stories" },
+                    { phase: "Strategic Clarity", description: "Channels her planning skills into productive, honest relationships" }
+                  ].map((step, index) => (
+                    <div key={index} className="flex items-start gap-3 p-3 bg-gradient-to-r from-passive-aggressive/10 to-transparent rounded-lg">
+                      <div className="flex items-center justify-center w-8 h-8 bg-passive-aggressive text-passive-aggressive-foreground rounded-full text-sm font-bold">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm">{step.phase}</h4>
+                        <p className="text-xs text-muted-foreground">{step.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 text-center p-4 bg-passive-aggressive/10 rounded-lg">
+                  <p className="text-sm font-semibold mb-2">🎭 From Mind Games to Clear Communication</p>
+                  <div className="flex justify-center gap-2 text-lg">
+                    😏📱➡️💬✨
+                  </div>
                 </div>
               </div>
             </CardContent>
