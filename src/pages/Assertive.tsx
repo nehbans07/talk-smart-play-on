@@ -229,15 +229,6 @@ const Assertive = () => {
             />
           </div>
 
-          {/* Transformation Plan */}
-          <div className="mb-12">
-            <TransformationPlan
-              title="The 7-Day Assertive Mastery Program"
-              plan={assertivePlan}
-              variant="assertive"
-            />
-          </div>
-
           {/* Communication Script Library */}
           <Card className="mb-12 shadow-card">
             <CardHeader>
@@ -286,6 +277,15 @@ const Assertive = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Transformation Plan */}
+          <div className="mb-12">
+            <TransformationPlan
+              title="📅 The 7-Day Assertive Mastery Program"
+              plan={assertivePlan}
+              variant="assertive"
+            />
+          </div>
 
           {/* Additional Resources */}
           <Card className="mb-12 shadow-card">

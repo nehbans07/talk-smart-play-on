@@ -225,14 +225,6 @@ const Aggressive = () => {
             />
           </div>
 
-          {/* Transformation Plan */}
-          <div className="mb-12">
-            <TransformationPlan
-              title="The 7-Day Bulldozer Recovery Program"
-              plan={aggressivePlan}
-              variant="aggressive"
-            />
-          </div>
 
           {/* Additional Resources */}
           <Card className="mb-12 shadow-card">

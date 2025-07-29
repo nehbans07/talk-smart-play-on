@@ -228,14 +228,6 @@ const Passive = () => {
             />
           </div>
 
-          {/* Transformation Plan */}
-          <div className="mb-12">
-            <TransformationPlan
-              title="The 7-Day Passive Recovery Program"
-              plan={passivePlan}
-              variant="passive"
-            />
-          </div>
 
           {/* Additional Resources */}
           <Card className="mb-12 shadow-card">

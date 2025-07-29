@@ -227,14 +227,6 @@ const PassiveAggressive = () => {
             />
           </div>
 
-          {/* Transformation Plan */}
-          <div className="mb-12">
-            <TransformationPlan
-              title="The 7-Day Straight Talk Recovery Program"
-              plan={passiveAggressivePlan}
-              variant="passive-aggressive"
-            />
-          </div>
 
           {/* Additional Resources */}
           <Card className="mb-12 shadow-card">
